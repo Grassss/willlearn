@@ -1,0 +1,96 @@
+@import "../base/base";
+.willlearn-all {
+    .willlearn-main {
+        position: relative;
+        font-weight: 300;
+        width: 1200px;
+        margin: 0 auto;
+        .willlearn-nav-logo {
+            height: 110px;
+            vertical-align: middle;
+            display: table-cell;
+            margin-right: 100px;
+            img {
+                width: 140px;
+                height: 44px;
+                margin-right: 15px;
+            }
+            span {
+                color: @gray;
+                font-size: @font-14;
+            }
+        }
+        .willlearn-nav {
+            position: absolute;
+            left: 592px;
+            top: 51px;
+            font-size: @font-20;
+            color: @gray;
+            ul {
+                li {
+                    float: left;
+                    margin-right: 77px;
+                }
+            }
+        }
+    }
+    .willlearn-carousel {
+        position: relative;
+        height: 522px;
+        min-width: 1200px;
+        .willlearn-bg {
+            margin: auto;
+            width: 100%;
+            height: 522px;
+            min-width: 1201px;
+        }
+        .willlearn-title {
+            position: absolute;
+            top: 29%;
+            left: 35%;
+            width: 407px;
+            height: 236px;
+            z-index: 111;
+        }
+        .willlearn-layer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            margin: 0 auto;
+            height: 80px;
+            width: 100%;
+            background-color: #000;
+            opacity: .5;
+            min-width: 1201px;
+            z-index: 111;
+            ul {
+                margin: 0 auto;
+                height: 80px;
+                width: 1200px;
+                color: @white;
+                font-size: 20px;
+                font-weight: 300;
+                li {
+                    width: 298px;
+                    float: left;
+                    border-right: 1px solid @white;
+                    height: 70px;
+                    text-align: center;
+                    padding-top: 10px;
+                }
+                &:last-child {
+                    border-left: 1px solid @white;
+                }
+            }
+        }
+        .willlearn-search {
+            position: absolute;
+            top: 40px;
+            left: 15%;
+            width: 884px;
+            height: 56px;
+            background-color: @white;
+            z-index: 111;
+        }
+    }
+}
